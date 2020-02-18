@@ -32,4 +32,4 @@ en KEY="Debe de ir el token"
 4) Confirma que este funcionando correctamente, cerrando sesion y volviendo a entrar.
 
 
-Fork de: MyTheValentinus 
+Fork de: @MyTheValentinus  @stylernico

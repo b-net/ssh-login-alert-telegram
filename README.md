@@ -2,7 +2,7 @@
 
 Funciona en todas las distribuciones populares de linux. (Debian, Ubuntu, Arch Linux etc..)
 
-![Example](msg.png)
+![Ejemplo](msg.png)
 
 ### Requerimientos:
 - curl

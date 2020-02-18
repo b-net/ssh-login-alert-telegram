@@ -3,32 +3,31 @@
 add_profiled(){
 cat <<EOF > /etc/profile.d/telegram-alert.sh
 #!/usr/bin/env bash
-# Log connections
+# Log conexiones
 bash $ALERTSCRIPT_PATH
 EOF
 }
 
 add_zsh () {
 cat <<EOF >> /etc/zsh/zshrc
-
-# Log connections
+# Log conexiones
 bash $ALERTSCRIPT_PATH
 EOF
 }
 
 ALERTSCRIPT_PATH="/opt/ssh-login-alert-telegram/alert.sh"
 
-echo "Deploying alerts..."
+echo "Desplegando alertas..."
 add_profiled
 
-echo "Check if ZSH is installed.."
+echo "Checa si ZSH esta instalado."
 
 HAS_ZSH=$(grep -o -m 1 "zsh" /etc/shells)
 if [ ! -z $HAS_ZSH ]; then
-    echo "ZSH is installed, deploy alerts to zshrc"
+    echo "ZSH esta instalado, agregando alertas a zshrc"
     add_zsh
 else
-    echo "No zsh detected"
+    echo "Instala zsh. Al parecer no esta instalado"
 fi
 
-echo "Done!"
+echo "Terminado!"

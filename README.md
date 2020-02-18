@@ -7,7 +7,7 @@ Funciona en todas las distribuciones populares de linux. (Debian, Ubuntu, Arch L
 ### Requerimientos:
 - curl
 - zsh
-- git (mas simple de instalar)
+- git (la instalacion es mas siple)
 
 ### Instalacion
 1) Clonar o descargar a /opt/ folder
@@ -25,7 +25,8 @@ en KEY="Debe de ir el token"
 
 3) Ejecuta este script para instalar:
 ```bash deploy.sh```
-a) Si estas usando CentOS o una distribucion basada en RedHat Ejecuta:
+
+ -- Si estas usando CentOS o una distribucion basada en RedHat Ejecuta:
 ```bash deploy-centos.sh```
 
 4) Confirma que este funcionando correctamente, cerrando sesion y volviendo a entrar.

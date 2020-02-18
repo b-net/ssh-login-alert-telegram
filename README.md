@@ -1,26 +1,31 @@
-## Alert via telegram when user logon via SSH
+## Alerta via telegram cuando un usuario entra via SSH
 
-Work on all popular linux system (Debian, Ubuntu, Arch Linux etc..)
+Funciona en todas las distribuciones populares de linux. (Debian, Ubuntu, Arch Linux etc..)
 
 ![Example](msg.png)
 
-### Requirement
+### Requerimientos:
 - curl
-- git (much easy to install)
+- zsh
+- git (mas simple de instalar)
 
-### Install
-1) Clone or download to /opt/ folder
-```cd /opt/ && git clone https://github.com/MyTheValentinus/ssh-login-alert-telegram```
+### Instalacion
+1) Clonar o descargar a /opt/ folder
+```cd /opt/ && git clone https://github.com/b-net/ssh-login-alert-telegram```
 
-2) Edit two configuration variables by editing credentials.config:
+2) Edita las 2 varaibles en el archivo credentials.config:
 ```vim credentials.config```
+En User ID poner el GROUP_ID o CHAT_ID (separados con espacio)
+en KEY="Debe de ir el token"
 
-3) Add this script when user connect with the deploy script:
+Ejemplo
+USERID=( -100000000995  -100666660996 )
+KEY="3987987987:AAGP-7qda0918xbbbbxxxxxxx-WnEQ-0k"
+
+3) Ejecuta este script para instalar:
 ```bash deploy.sh```
 
-4) Confirm that the script is working by logging you to ssh again.
+4) Confirma que este funcionando correctamente, cerrando sesion y volviendo a entrar.
 
 
-### Install with Ansible
-
-If you have many servers go check: https://github.com/MyTheValentinus/Deploy-Telegram-SSH-Alerting-with-Ansible (fork of initial @stylernico work)
+Fork de: MyTheValentinus 

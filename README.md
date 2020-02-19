@@ -5,9 +5,9 @@ Funciona en todas las distribuciones populares de linux. (Debian, Ubuntu, Arch L
 ![Ejemplo](msg.png)
 
 ### Requerimientos:
-- curl
-- zsh
-- git (la instalacion es mas siple)
+* curl
+* zsh
+* git (la instalacion es mas siple)
 
 ### Instalacion
 1) Clonar o descargar a /opt/ folder
@@ -15,13 +15,12 @@ Funciona en todas las distribuciones populares de linux. (Debian, Ubuntu, Arch L
 
 2) Edita las 2 varaibles en el archivo credentials.config:
 ```vim credentials.config```
-En User ID poner el GROUP_ID o CHAT_ID (separados con espacio)
-en KEY="Debe de ir el token"
+- En User ID poner el GROUP_ID o CHAT_ID (separados con espacio)
+- en KEY="Debe de ir el token"
 
 ### Ejemplo
-```USERID=( -100000000995  -100666660996 )```
-
-```KEY="3987987987:AAGP-7qda0918xbbbbxxxxxxx-WnEQ-0k"```
+ > USERID=( -100000000995  -100666660996 ) 
+ > KEY="3987987987:AAGP-7qda0918xbbbbxxxxxxx-WnEQ-0k"
 
 3) Ejecuta este script para instalar:
 ```bash deploy.sh```

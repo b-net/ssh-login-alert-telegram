@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
  
-# Import credentials form config file
+# Importa las credentiales desde el archivo de configuracion.
 . /opt/ssh-login-alert-telegram/credentials.config
 for i in "${USERID[@]}"
 do
